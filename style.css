@@ -1,0 +1,69 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1b1f2a;
+  background: #ffffff;
+}
+
+header {
+  background: #1b1f2a;
+  color: #ffffff;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+header h1 { font-size: 2rem; }
+header p { color: #cfd5df; margin-top: 4px; }
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.titre-page {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+}
+
+.catalogue {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.produit {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  background: #fbede7;
+  border-radius: 12px;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.titre { font-size: 1.2rem; }
+
+.prix {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2f9e6e;
+}
+
+.quantite { color: #5b6472; }
+
+footer {
+  background: #fbede7;
+  color: #5b6472;
+  text-align: center;
+  padding: 20px;
+}
